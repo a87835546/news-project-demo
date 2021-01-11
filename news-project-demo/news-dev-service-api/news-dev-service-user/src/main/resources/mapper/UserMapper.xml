@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yicen.user.mapper.UserMapper">
+    <select id="findUserByPhone" parameterType="java.lang.String" resultType="com.yicen.pojo.AppUser">
+        select * from app_user where mobile = #{mobile}
+    </select>
+
+    <insert id="registerByPhone" parameterType="java.lang.String" >
+        insert into app_user(mobile) values (#{mobile});
+    </insert>
+
+    <select id="getUserInfoById" parameterType="java.lang.String" resultType="com.yicen.pojo.AppUser">
+        select * from app_user where id = #{userId}
+    </select>
+</mapper>

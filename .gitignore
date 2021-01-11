@@ -1,0 +1,5 @@
+# Project exclude paths
+/news-project-demo/news-dev-common/target/
+/news-project-demo/news-dev-model/target/
+/news-project-demo/news-dev-service-api/news-dev-service-user/target/
+/news-project-demo/news-dev-service-api/target/
